@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if ll==1 %}
+<p>Sorry! The movie you requested is not in our database. Please check the spelling or try with some other movies</p>
+{% else %}
+
+<center> movies similar to the {{re}}</center>
+<br>
+<br>
+<br>
+
+{% for post in posts %}
+<center
+    <h2>{{post}}</h2>
+</centre>
+{% endfor %}
+{% endif %}
+
+
+{% endblock %}

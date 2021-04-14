@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<center>
+<form action ="" method="post">
+    <p>
+        {{form.moviename.label}}<br>
+        {{form.moviename(size=30)}}
+    </p>
+
+    <p>
+        {{form.submit()}}</p>
+</form>
+</center>
+
+
+{% endblock %}
